@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>自己紹介</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>高谷梨紗の自己紹介</h1>
+  <h1 id="page-title">高谷梨紗の自己紹介</h1>
   <h2>自己紹介</h2>
-  <p>はじめまして。Webエンジニアを目指して学習しています。</p>
+  <p class="intro">はじめまして。Webエンジニアを目指して学習しています。</p>
   <h2>これからやりたいこと</h2>
   <p>自分でWebアプリを作って、公開できるようになりたいです。</p>
   <h2>趣味</h2>
@@ -16,7 +17,55 @@
     <li>料理</li>
     <li>ピクニック</li>
     </ul>
-    
+  <h2>プロフィール写真</h2>  
+  <img src="images/photo.png" alt="プロフィール写真">
+  <h2>これまでの経歴</h2> 
+  <table>
+  <tr>
+    <th>年</th>
+    <th>できごと</th>
+  </tr>
+  <tr>
+    <td>2026年</td>
+    <td>中途採用で入社</td>
+  </tr>
+  <tr>
+    <td>2026年</td>
+    <td>派遣社員として配属開始</td>
+  </tr>
+  <tr>
+    <td>2026年</td>
+    <td>エンジニアを目指して学習を開始</td>
+  </tr>
+</table>
+ <h2>お問い合わせ</h2> 
+<form>
+  <label for="name">お名前</label>
+  <br>
+  <input type="text" id="name" name="name">
+<br>
+  <label for="email">メールアドレス</label>
+  <br>
+  <input type="email" id="email" name="email"> 
+  <br>
+  <label for="purpose">お問い合わせの種類</label>
+  <br>
+<select id="purpose" name="purpose">
+  <option value="question">質問</option>
+  <option value="request">要望</option>
+  <option value="other">その他</option>
+</select>
+<br>
+<label for="message">お問い合わせ内容</label>
+<br>
+<textarea id="message" name="message" rows="5"></textarea>
+<br>
+<button type="submit">送信する</button>
+  
+</form>
+
+
+
 
 
 </body>
