@@ -7,3 +7,10 @@ body {
 .intro {
   background-color: #f0f4f8;
 }
+.card {
+  width: 300px;
+  padding: 16px;
+  border: 1px solid #000000;
+  margin: 20px;
+  background-color: #a8d0f8;
+}
